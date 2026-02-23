@@ -421,7 +421,7 @@ Value* get_max(Value **elements, int size) {
 }
 
 Value* sum(Value **elements, int size) {
-    Value *sum = new_value(elements[0]->data, NULL, " ");
+    Value *sum = elements[0];
     for(int i = 1; i < size; i++) {
         sum = add(sum, elements[i]);
     }
