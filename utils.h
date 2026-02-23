@@ -16,7 +16,7 @@ double rng_random(RNG *rng) {
     return (rng_random_u32(rng) >> 8) / 16777216.0;
 }
 
-double rng_uniform(RNG *rng, float beg, int end) {
+double rng_uniform(RNG *rng, float beg, float end) {
     return beg + (end - beg) * rng_random(rng);
 }
 
